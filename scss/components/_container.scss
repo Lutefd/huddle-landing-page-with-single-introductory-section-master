@@ -1,0 +1,44 @@
+.container {
+  height: 100vh;
+  margin: auto;
+  padding-top: 3rem;
+  max-width: 100%;
+  width: 85rem;
+}
+.flex {
+  display: flex;
+  margin: 6.25rem 0;
+  gap: 2.5rem;
+  > div:first-child {
+    margin-right: 2rem;
+    flex: 0.6;
+  }
+  > div:last-child {
+    margin-left: 2rem;
+    flex: 0.4;
+  }
+}
+.button {
+  background-color: var(--white);
+  color: var(--primary-100);
+  padding: 1.25rem 5rem;
+  font-size: 1.5rem;
+  box-shadow: var(--shadow-3);
+  border: none;
+  border-radius: 3.125rem;
+}
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1.25rem;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    color: var(--white);
+    height: 3.125rem;
+    width: 3.125rem;
+  }
+}
