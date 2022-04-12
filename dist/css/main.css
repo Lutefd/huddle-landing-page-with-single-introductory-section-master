@@ -51,8 +51,7 @@ body {
   background-image: url(/images/bg-desktop.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: top;
-  background-position-x: 150%;
+  background-position-x: -5.5rem;
   background-color: var(--primary-100);
   min-height: 100vh;
   display: grid;
@@ -116,7 +115,9 @@ ul {
 
 .flex {
   display: flex;
-  margin: 6.25rem 0;
+  margin-top: 5rem;
+  margin-right: 1rem;
+  margin-left: 1.5rem;
   gap: 2.5rem;
 }
 .flex > div:first-child {
@@ -131,11 +132,16 @@ ul {
 .button {
   background-color: var(--white);
   color: var(--primary-100);
-  padding: 1.25rem 5rem;
+  padding: 1.125rem 5.5rem;
   font-size: 1.5rem;
   box-shadow: var(--shadow-3);
   border: none;
   border-radius: 3.125rem;
+}
+
+.button:hover {
+  background-color: var(--primary-200);
+  color: var(--white);
 }
 
 .social-icons {
@@ -152,6 +158,11 @@ ul {
   color: var(--white);
   height: 3.125rem;
   width: 3.125rem;
+}
+
+.social-icons:hover a {
+  color: var(--primary-200);
+  border: 2px solid var(--primary-200);
 }
 
 @media (max-width: 768px) {
@@ -189,8 +200,6 @@ ul {
 
   .social-icons {
     justify-content: center;
-    margin-top: 0.5em;
-    margin-right: 1rem;
   }
   .social-icons a {
     border: 1px solid var(--white);
