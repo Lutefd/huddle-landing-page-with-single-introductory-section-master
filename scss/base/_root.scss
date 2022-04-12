@@ -60,6 +60,12 @@ body {
   min-height: 100vh;
   display: grid;
   place-items: center;
+  @media (max-width: 768px) {
+    background-image: url(/images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+  }
 }
 
 p {

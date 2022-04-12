@@ -58,6 +58,14 @@ body {
   display: grid;
   place-items: center;
 }
+@media (max-width: 768px) {
+  body {
+    background-image: url(/images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+  }
+}
 
 p {
   font-family: var(--bodyFont);
@@ -144,4 +152,55 @@ ul {
   color: var(--white);
   height: 3.125rem;
   width: 3.125rem;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 40%;
+    display: block;
+  }
+
+  .container {
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    padding: 1.25rem;
+  }
+  .container h1 {
+    font-size: 1.2em;
+    margin-bottom: 1.5rem;
+  }
+  .container p {
+    font-size: 0.74em;
+  }
+
+  .flex {
+    margin: 3.8rem auto;
+    flex-direction: column;
+  }
+  .flex > div:first-child {
+    flex: 1;
+    margin-right: 0;
+  }
+  .flex > div:last-child {
+    flex: 1;
+    margin-left: 0;
+  }
+
+  .social-icons {
+    justify-content: center;
+    margin-top: 0.5em;
+    margin-right: 1rem;
+  }
+  .social-icons a {
+    border: 1px solid var(--white);
+    height: 2em;
+    width: 2em;
+    font-size: 0.7em;
+  }
+
+  .button {
+    font-size: 0.74em;
+    padding: 0.75rem 5rem;
+  }
 }/*# sourceMappingURL=main.css.map */
