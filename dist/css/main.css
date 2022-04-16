@@ -108,9 +108,9 @@ ul {
 .container {
   height: 100vh;
   margin: auto;
-  padding-top: 3rem;
+  padding-top: 2.5rem;
   max-width: 100%;
-  width: 85rem;
+  width: 80rem;
 }
 
 .flex {
@@ -119,13 +119,15 @@ ul {
   margin-right: 1rem;
   margin-left: 1.5rem;
   gap: 2.5rem;
+  position: relative;
 }
 .flex > div:first-child {
+  transform: scale(0.9);
   margin-right: 2rem;
   flex: 0.6;
 }
 .flex > div:last-child {
-  margin-left: 2rem;
+  transform: scale(0.8);
   flex: 0.4;
 }
 
@@ -146,7 +148,9 @@ ul {
 
 .social-icons {
   display: flex;
-  justify-content: flex-end;
+  position: absolute;
+  right: 5%;
+  top: 33em;
 }
 .social-icons a {
   display: inline-flex;
